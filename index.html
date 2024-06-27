@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cek Khodam</title>
+    <script>
+      function generateRandomKata() {
+        const textContent = [
+          "Lumba-Lumba Ngupil",
+          "Sapu Terbang",
+          "Kucing Balap Sepeda",
+          "Bebek Ngompol",
+          "Hantu Ketawa Kuda",
+          "Lemari Bicara",
+          "Jerapah Skuter",
+          "Ikan Berkaki",
+          "Tikus Menyanyi",
+          "Harimau Berdasi",
+          "Kambing Kacamata",
+          "Piring Terbang",
+          "Naga Pencabut Rumput",
+          "Kodok Jago Masak",
+          "Semut Bergitar",
+          "Kuda Selam",
+          "Ayam Berenang",
+          "Kupu-Kupu Ninja",
+          "Kerbau Berdansa",
+          "Kelinci Pemburu",
+          "Burung Listrik",
+          "Buaya Berambut",
+          "Batu Menari",
+          "Pahlawan Pelupa",
+          "Anjing Terbang",
+          "Sikat Gigi Bicara",
+          "Raja Es Krim",
+          "Ular Melompat",
+          "Pinguin Pemain Bola",
+          "Ikan Berkacamata",
+          "Gajah Skateboard",
+          "Si Gajah Menangis",
+          "Monster Marshmallow",
+          "Babi Ngepet Digital",
+          "Semangka Terbang",
+          "Robot Menyapu",
+          "Hiu Berjalan",
+          "Domba Berkuda",
+          "Rusa Terbang",
+          "Kaleng Bicara",
+          "Cacing Menari",
+          "Buaya Koki",
+          "Tikus Listrik",
+          "Si Raja Kecoak",
+          "Bola Ngambang",
+          "Kuda Berenang",
+          "Ikan Menyanyi",
+          "Kucing Berkacamata",
+          "Sapi Pemalas",
+          "Kambing Berdasi",
+          "Bola Salju",
+          "Kodok Tertawa",
+          "Kelinci Balap",
+          "Ayam Melompat",
+          "Hantu Kocak",
+          "Burung Pahlawan",
+          "Gajah Kecil",
+          "Poci Teh Bicara",
+          "Banteng Balap",
+          "Naga Pelangi",
+          "Pisang Ajaib",
+          "Raja Ngemil",
+          "Bebek Sepatu",
+          "Bola Hantu",
+          "Buaya Tersesat",
+          "Si Mulut Besar",
+          "Kucing Terbang",
+          "Ayam Skuter",
+          "Raja Drama",
+          "Kucing Nakal",
+          "Si Manis Jembatan",
+          "Harimau Pelukis",
+          "Robot Terbang",
+          "Semangka Kecil",
+          "Buaya Kampung",
+          "Kodok Berlagu",
+          "Rusa Berdansa",
+          "Bola Pelangi",
+          "Naga Es Krim",
+          "Hantu Robot",
+          "Kuda Ngompol",
+          "Si Kelapa Bicara",
+          "Burung Menyanyi",
+          "Raja Kotak",
+          "Kelinci Berenang",
+          "Kucing Listrik",
+          "Ikan Terbang",
+          "Poci Berkacamata",
+          "Monster Lucu",
+          "Bola Gitar",
+          "Kerbau Pemalas",
+          "Batu Skateboard",
+          "Sapi Terbang",
+          "Semut Skateboard",
+          "Burung Pelangi",
+          "Si Poci Menari",
+          "Hiu Skateboard",
+          "Tikus Terbang",
+          "Gajah Menari",
+          "Buaya Kacamata",
+        ];
+        name = document.getElementById("input").value;
+        if (name != "") {
+          console.log(name);
+          const randomKata =
+            kataList[Math.floor(Math.random() * kataList.length)];
+          document.getElementById("output").textContent = randomKata;
+
+          document.getElementById("input").value = "";
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark">
+    <h1 class="text-light text-center mt-5 fw-bold">Khodam kamu adalah</h1>
+    <h1 id="output" class="text-danger text-center fw-bold"></h1>
+    <form onsubmit="generateRandomKata(); return false;">
+      <div class="text-center">
+        <input
+          id="input"
+          type="text"
+          placeholder="Masukkan Namamu"
+          class="w-50 mt-5"
+          style="height: 50px; font-size: 25pt"
+        />
+      </div>
+      <div class="text-center mt-5">
+        <button type="submit" class="btn w-25 btn-danger text-center">
+          Cek
+        </button>
+      </div>
+    </form>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
