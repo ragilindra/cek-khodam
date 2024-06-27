@@ -1,7 +1,15 @@
 body {
     background-image: url('img/Nyi-Roro-Kidul-11.webp');
-    /* background-position: center; */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
+    /* background-position: center; */
     position: relative;
+}
+
+/* Media query untuk layar yang lebih kecil (ponsel) */
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: contain;
+        background-attachment: fixed;
+    }
 }
